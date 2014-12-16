@@ -1,0 +1,31 @@
+<?php
+function pages_menu()
+{
+    $items['pages']=array(
+    'title'=>'menu system example',
+    'description'=>'menu system examples',
+    'pages callback'=>'pages string',
+    'access callback'=>TRUE',
+    );
+    
+    return $items;
+    
+    function output_string()
+    {
+    
+     $output=theme('item list',array(
+     
+     'title'=>'renderarray are better bacause...',
+     
+     'items'=>'array(<p>this is example page it can be returned as string</p>',
+     
+     <p>this is example page it can be returned as rendered array</p>',
+     ))
+     
+     return $output;
+     
+     );
+     
+    }
+    
+?>
